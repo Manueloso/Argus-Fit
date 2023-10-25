@@ -12,6 +12,7 @@
 		24B9743A2AE7A751000A8510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24B974392AE7A751000A8510 /* Assets.xcassets */; };
 		24FE541F2AE9070200604F38 /* GoalsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE541E2AE9070200604F38 /* GoalsContentView.swift */; };
 		24FE54212AE9072C00604F38 /* Goals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE54202AE9072C00604F38 /* Goals.swift */; };
+		D65FDCE72AE9197F009A177E /* WorkoutSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FDCE62AE9197F009A177E /* WorkoutSectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		24FE541E2AE9070200604F38 /* GoalsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsContentView.swift; sourceTree = "<group>"; };
 		24FE54202AE9072C00604F38 /* Goals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goals.swift; sourceTree = "<group>"; };
 		24FE54292AE910B600604F38 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Preview Assets.xcassets"; path = "../../../../.Trash/Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D65FDCE62AE9197F009A177E /* WorkoutSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			children = (
 				24FE541E2AE9070200604F38 /* GoalsContentView.swift */,
 				24FE54202AE9072C00604F38 /* Goals.swift */,
+				D65FDCE52AE91949009A177E /* Workout Section */,
 			);
 			name = Goals;
 			path = "First Page/Goals";
@@ -87,6 +90,14 @@
 				24FE54292AE910B600604F38 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D65FDCE52AE91949009A177E /* Workout Section */ = {
+			isa = PBXGroup;
+			children = (
+				D65FDCE62AE9197F009A177E /* WorkoutSectionView.swift */,
+			);
+			path = "Workout Section";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +172,7 @@
 				24FE54212AE9072C00604F38 /* Goals.swift in Sources */,
 				24B974382AE7A750000A8510 /* FirstPage.swift in Sources */,
 				24B974362AE7A750000A8510 /* Argus_MainApp.swift in Sources */,
+				D65FDCE72AE9197F009A177E /* WorkoutSectionView.swift in Sources */,
 				24FE541F2AE9070200604F38 /* GoalsContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
