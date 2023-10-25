@@ -21,6 +21,7 @@
 		24B974392AE7A751000A8510 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24FE541E2AE9070200604F38 /* GoalsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsContentView.swift; sourceTree = "<group>"; };
 		24FE54202AE9072C00604F38 /* Goals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goals.swift; sourceTree = "<group>"; };
+		24FE54292AE910B600604F38 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Preview Assets.xcassets"; path = "../../../../.Trash/Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,17 +55,11 @@
 			isa = PBXGroup;
 			children = (
 				24B974432AE7AD86000A8510 /* First Page */,
+				24FE54222AE9077500604F38 /* Goals */,
 				24B974392AE7A751000A8510 /* Assets.xcassets */,
-				24B9743B2AE7A751000A8510 /* Preview Content */,
+				24FE54252AE90FBC00604F38 /* Preview Content */,
 			);
 			path = "Argus Main";
-			sourceTree = "<group>";
-		};
-		24B9743B2AE7A751000A8510 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		24B974432AE7AD86000A8510 /* First Page */ = {
@@ -72,7 +67,6 @@
 			children = (
 				24B974352AE7A750000A8510 /* Argus_MainApp.swift */,
 				24B974372AE7A750000A8510 /* FirstPage.swift */,
-				24FE54222AE9077500604F38 /* Goals */,
 			);
 			path = "First Page";
 			sourceTree = "<group>";
@@ -83,7 +77,16 @@
 				24FE541E2AE9070200604F38 /* GoalsContentView.swift */,
 				24FE54202AE9072C00604F38 /* Goals.swift */,
 			);
-			path = Goals;
+			name = Goals;
+			path = "First Page/Goals";
+			sourceTree = "<group>";
+		};
+		24FE54252AE90FBC00604F38 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				24FE54292AE910B600604F38 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
