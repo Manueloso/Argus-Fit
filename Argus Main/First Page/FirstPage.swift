@@ -32,12 +32,10 @@ struct FirstPage: View {
                             .font(.title)
                             .fontWeight(.bold)
                             .foregroundColor(Color.white)
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color.white)
+  
                             .padding(.top, 350.0)
                         Text("Fitness Start From You!")
-                            .fontWeight(.bold)
+                            .font(Font.custom("SF Pro", size: 20))
                             .foregroundColor(Color.white)
                             .padding(.bottom, 90.0)
                         HStack{
