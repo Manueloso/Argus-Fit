@@ -11,7 +11,7 @@ struct WorkoutSection: View {
             NavigationLink ( destination:FirstPage() ){
                
             }.navigationTitle("Stage 2")
-            
+                .navigationBarTitleDisplayMode(.inline)
             
             
             VStack(alignment: .center, spacing: 6) {
