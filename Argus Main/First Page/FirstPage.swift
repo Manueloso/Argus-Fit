@@ -10,6 +10,7 @@ import SwiftUI
 
 struct FirstPage: View {
     var body: some View {
+
         VStack {
             Text("Argus Fits")
                 .font(.largeTitle)
@@ -32,7 +33,7 @@ struct FirstPage: View {
                             .font(.title)
                             .fontWeight(.bold)
                             .foregroundColor(Color.white)
-  
+                        
                             .padding(.top, 350.0)
                         Text("Fitness Start From You!")
                             .font(Font.custom("SF Pro", size: 20))
@@ -51,8 +52,8 @@ struct FirstPage: View {
             }
         }
     }
-}
 
+}
 
 
 
