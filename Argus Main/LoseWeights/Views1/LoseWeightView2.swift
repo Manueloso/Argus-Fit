@@ -22,5 +22,5 @@ struct LoseWeightView2: View {
 }
 
 #Preview {
-    LoseWeightView2(sport: <#Sport#>)
+    LoseWeightView2(sport: Sport(name: "Running", imageName: "running"))
 }

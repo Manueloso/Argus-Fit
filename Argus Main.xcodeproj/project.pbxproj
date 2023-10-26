@@ -14,6 +14,11 @@
 		24FE541F2AE9070200604F38 /* GoalsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE541E2AE9070200604F38 /* GoalsContentView.swift */; };
 		24FE54212AE9072C00604F38 /* Goals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE54202AE9072C00604F38 /* Goals.swift */; };
 		D65FDCE72AE9197F009A177E /* WorkoutSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FDCE62AE9197F009A177E /* WorkoutSectionView.swift */; };
+		E763A2422AEA8343000DE1DB /* Sport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763A2412AEA8343000DE1DB /* Sport.swift */; };
+		E763A2442AEA8354000DE1DB /* SportsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763A2432AEA8354000DE1DB /* SportsViewModel.swift */; };
+		E763A24F2AEA83BC000DE1DB /* LoseWeightView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763A24C2AEA83BC000DE1DB /* LoseWeightView2.swift */; };
+		E763A2502AEA83BC000DE1DB /* SportsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763A24D2AEA83BC000DE1DB /* SportsListView.swift */; };
+		E763A2512AEA83BC000DE1DB /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763A24E2AEA83BC000DE1DB /* RectangleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		24FE54202AE9072C00604F38 /* Goals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goals.swift; sourceTree = "<group>"; };
 		24FE54292AE910B600604F38 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Preview Assets.xcassets"; path = "../../../../.Trash/Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D65FDCE62AE9197F009A177E /* WorkoutSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSectionView.swift; sourceTree = "<group>"; };
+		E763A2412AEA8343000DE1DB /* Sport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sport.swift; sourceTree = "<group>"; };
+		E763A2432AEA8354000DE1DB /* SportsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsViewModel.swift; sourceTree = "<group>"; };
+		E763A24C2AEA83BC000DE1DB /* LoseWeightView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoseWeightView2.swift; sourceTree = "<group>"; };
+		E763A24D2AEA83BC000DE1DB /* SportsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsListView.swift; sourceTree = "<group>"; };
+		E763A24E2AEA83BC000DE1DB /* RectangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +76,7 @@
 		24B974342AE7A750000A8510 /* Argus Main */ = {
 			isa = PBXGroup;
 			children = (
+				E763A23C2AEA82EF000DE1DB /* LoseWeights */,
 				092EB97D2AEA7C6100E86E43 /* Running Section */,
 				24FE54222AE9077500604F38 /* Goals */,
 				D65FDCE52AE91949009A177E /* Workout Section */,
@@ -108,6 +119,42 @@
 				D65FDCE62AE9197F009A177E /* WorkoutSectionView.swift */,
 			);
 			path = "Workout Section";
+			sourceTree = "<group>";
+		};
+		E763A23C2AEA82EF000DE1DB /* LoseWeights */ = {
+			isa = PBXGroup;
+			children = (
+				E763A2522AEA846D000DE1DB /* Views1 */,
+				E763A2542AEA8571000DE1DB /* ViewModels */,
+				E763A2532AEA8559000DE1DB /* Models */,
+			);
+			path = LoseWeights;
+			sourceTree = "<group>";
+		};
+		E763A2522AEA846D000DE1DB /* Views1 */ = {
+			isa = PBXGroup;
+			children = (
+				E763A24C2AEA83BC000DE1DB /* LoseWeightView2.swift */,
+				E763A24E2AEA83BC000DE1DB /* RectangleView.swift */,
+				E763A24D2AEA83BC000DE1DB /* SportsListView.swift */,
+			);
+			path = Views1;
+			sourceTree = "<group>";
+		};
+		E763A2532AEA8559000DE1DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E763A2412AEA8343000DE1DB /* Sport.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E763A2542AEA8571000DE1DB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E763A2432AEA8354000DE1DB /* SportsViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,11 +226,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E763A2512AEA83BC000DE1DB /* RectangleView.swift in Sources */,
+				E763A2422AEA8343000DE1DB /* Sport.swift in Sources */,
 				24FE54212AE9072C00604F38 /* Goals.swift in Sources */,
 				24B974382AE7A750000A8510 /* FirstPage.swift in Sources */,
 				24B974362AE7A750000A8510 /* Argus_MainApp.swift in Sources */,
+				E763A2442AEA8354000DE1DB /* SportsViewModel.swift in Sources */,
 				092EB97C2AEA7C4E00E86E43 /* RunningSection.swift in Sources */,
+				E763A24F2AEA83BC000DE1DB /* LoseWeightView2.swift in Sources */,
 				D65FDCE72AE9197F009A177E /* WorkoutSectionView.swift in Sources */,
+				E763A2502AEA83BC000DE1DB /* SportsListView.swift in Sources */,
 				24FE541F2AE9070200604F38 /* GoalsContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
