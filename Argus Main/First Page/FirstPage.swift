@@ -10,7 +10,8 @@ import SwiftUI
 
 struct FirstPage: View {
     var body: some View {
-
+        
+        
         VStack {
             Text("Argus Fits")
                 .font(.largeTitle)
@@ -39,21 +40,46 @@ struct FirstPage: View {
                             .font(Font.custom("SF Pro", size: 20))
                             .foregroundColor(Color.white)
                             .padding(.bottom, 90.0)
-                        HStack{
-                            Text("START")
-                                .font(Font.custom("SF Pro", size: 17))
-                            .foregroundColor(Color(red: 0.11, green: 0.52, blue: 0.95))}
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 14)
-                        .background(.white)
-                        .cornerRadius(12)
+                        
+                        
+                        NavigationLink(destination: GoalsContentView()){
+                            
+                            ZStack{
+                                Rectangle()
+                                    .foregroundColor(.clear)
+                                    .frame(width: 120, height: 70)
+                                    .background(Color.white)
+                                    .cornerRadius(20)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 20)
+                                            .inset(by: 2)
+                                            .stroke(Color.blue, lineWidth: 4)
+                                    )
+                                VStack{
+                                    HStack{
+                                        Text("START")
+                                    }
+                                    .font(
+                                        Font.custom("SF Pro", size: 24)
+                                            .weight(.semibold)
+                                    )
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(.blue)
+                                    .frame(width: 181, height: 27, alignment: .top)
+                                    
+                                    
+                                }
+                            }
+                        }
+                        .padding()
                     }
                 }
             }
         }
     }
-
 }
+
+
 
 
 

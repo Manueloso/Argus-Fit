@@ -4,69 +4,111 @@ struct WorkoutSection: View {
     @State private var elapsedTime: TimeInterval = 0
     @State private var timerIsRunning = false
     @State private var timer: Timer?
-
-    var body: some View {
-       
     
-        VStack(alignment: .center, spacing: 6) {
-            VStack(alignment: .leading, spacing: 10) {
-                Text("Walk for 4 minute\nRun for 1 minute\nRepeat that sequence 4 more times\nEnd with 4 minutes of walking")
-                    .font(Font.custom("SF Pro", size: 17).weight(.semibold))
-                    .foregroundColor(.white)
-                    .frame(width: 289, alignment: .leading)
-                    .padding(.horizontal, 21)
-                    .padding(.vertical, 18)
-                    .background(Color(red: 0.11, green: 0.52, blue: 0.95))
-                    .cornerRadius(10)
-                
-                Rectangle()
-                    .foregroundColor(.clear)
-                    .frame(width: 330, height: 315)
-                    .background(
-                        Image("workoutsection")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 330, height: 315)
-                            .clipped()
-                    )
+    var body: some View {
+        
+        NavigationStack {
+            NavigationLink ( destination:FirstPage() ){
+               
+            }.navigationTitle("Stage 2")
+            
+            
+            
+            VStack(alignment: .center, spacing: 6) {
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("Walk for 4 minute\nRun for 1 minute\nRepeat that sequence 4 more times\nEnd with 4 minutes of walking")
+                        .font(Font.custom("SF Pro", size: 17).weight(.semibold))
+                        .foregroundColor(.white)
+                        .frame(width: 289, alignment: .leading)
+                        .padding(.horizontal, 21)
+                        .padding(.vertical, 18)
+                        .background(Color(red: 0.11, green: 0.52, blue: 0.95))
+                        .cornerRadius(10)
                     
-            }
-            
-            Text(timeString(elapsedTime))
-                .font(Font.custom("SF Pro", size: 26).weight(.bold))
-                .multilineTextAlignment(.center)
-                .foregroundColor(Color(red: 0.22, green: 0.26, blue: 0.31))
-                .frame(width: 327, alignment: .bottom)
-            
-            Button(action: {
-                if timerIsRunning {
-                    timer?.invalidate()
-                    timer = nil
-                } else {
-                    startTimer()
+                    Rectangle()
+                        .foregroundColor(.clear)
+                        .frame(width: 330, height: 315)
+                        .background(
+                            Image("workoutsection")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 330, height: 315)
+                                .clipped()
+                        )
+                    
                 }
-                timerIsRunning.toggle()
-            }) {
-                Image(systemName: timerIsRunning ? "pause.circle.fill" : "play.circle.fill")
-                    .resizable()
-                    .frame(width: 64, height: 64) // Larger button size
-                    .foregroundColor(.white)
+                
+                Text(timeString(elapsedTime))
+                    .font(Font.custom("SF Pro", size: 26).weight(.bold))
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color(red: 0.22, green: 0.26, blue: 0.31))
+                    .frame(width: 327, alignment: .bottom)
+                
+                Button(action: {
+                    if timerIsRunning {
+                        timer?.invalidate()
+                        timer = nil
+                    } else {
+                        startTimer()
+                    }
+                    timerIsRunning.toggle()
+                }) {
+                    Image(systemName: timerIsRunning ? "pause.circle.fill" : "play.circle.fill")
+                        .resizable()
+                        .frame(width: 64, height: 64) // Larger button size
+                        .foregroundColor(.white)
+                }
+                .background(Color(red: 0.11, green: 0.52, blue: 0.95)
+                    .cornerRadius(500))
+                
+                ProgressBar(width: progressBarWidth(), totalWidth: 288)
+                    .frame(height: 4)
+                
+                NavigationLink(destination: FirstPage()){
+                    
+                    ZStack{
+                        Rectangle()
+                            .foregroundColor(.clear)
+                            .frame(width: 120, height: 70)
+                            .background(Color.white)
+                            .cornerRadius(20)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 20)
+                                    .inset(by: 2)
+                                    .stroke(Color.blue, lineWidth: 4)
+                            )
+                        VStack{
+                            HStack{
+                                Text("END")
+                            }
+                            .font(
+                                Font.custom("SF Pro", size: 24)
+                                    .weight(.semibold)
+                            )
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(.blue)
+                            .frame(width: 181, height: 27, alignment: .top)
+                            
+                            
+                        }
+                    }
+                }
+                .padding()
+                
+                
+                
             }
-            .background(Color(red: 0.11, green: 0.52, blue: 0.95)
-                            .cornerRadius(500))
-            
-            ProgressBar(width: progressBarWidth(), totalWidth: 288)
-                .frame(height: 4)
-            
         }
+        
     }
+    
     
     func startTimer() {
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
             elapsedTime += 1
         }
     }
-
+    
     func timeString(_ time: TimeInterval) -> String {
         let seconds = Int(time) % 60
         let minutes = Int(time) / 60 % 60
@@ -103,4 +145,7 @@ struct ProgressBar: View {
         }
     }
 }
+
+
+
 
