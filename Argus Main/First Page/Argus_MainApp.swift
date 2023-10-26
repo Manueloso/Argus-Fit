@@ -11,7 +11,7 @@ import SwiftUI
 struct Argus_MainApp: App {
     var body: some Scene {
         WindowGroup {
-            FirstPage()
+            
         }
     }
 }
