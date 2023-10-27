@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		092EB97C2AEA7C4E00E86E43 /* RunningSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092EB97B2AEA7C4E00E86E43 /* RunningSection.swift */; };
 		24A975282AEBB97E008E05D3 /* CongratulationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A975272AEBB97E008E05D3 /* CongratulationsView.swift */; };
+		24A9752B2AEBC783008E05D3 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 24A9752A2AEBC783008E05D3 /* ConfettiSwiftUI */; };
 		24B974362AE7A750000A8510 /* Argus_MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B974352AE7A750000A8510 /* Argus_MainApp.swift */; };
 		24B974382AE7A750000A8510 /* FirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B974372AE7A750000A8510 /* FirstPage.swift */; };
 		24B9743A2AE7A751000A8510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24B974392AE7A751000A8510 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24A9752B2AEBC783008E05D3 /* ConfettiSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +59,14 @@
 				092EB97B2AEA7C4E00E86E43 /* RunningSection.swift */,
 			);
 			path = "Running Section";
+			sourceTree = "<group>";
+		};
+		24A9752C2AEBC79E008E05D3 /* Congratulations */ = {
+			isa = PBXGroup;
+			children = (
+				24A975272AEBB97E008E05D3 /* CongratulationsView.swift */,
+			);
+			path = Congratulations;
 			sourceTree = "<group>";
 		};
 		24B974292AE7A750000A8510 = {
@@ -78,11 +88,12 @@
 		24B974342AE7A750000A8510 /* Argus Main */ = {
 			isa = PBXGroup;
 			children = (
+				24B974432AE7AD86000A8510 /* First Page */,
+				24FE54222AE9077500604F38 /* Goals */,
 				E763A23C2AEA82EF000DE1DB /* LoseWeights */,
 				092EB97D2AEA7C6100E86E43 /* Running Section */,
-				24FE54222AE9077500604F38 /* Goals */,
 				D65FDCE52AE91949009A177E /* Workout Section */,
-				24B974432AE7AD86000A8510 /* First Page */,
+				24A9752C2AEBC79E008E05D3 /* Congratulations */,
 				24B974392AE7A751000A8510 /* Assets.xcassets */,
 				24FE54252AE90FBC00604F38 /* Preview Content */,
 			);
@@ -110,7 +121,6 @@
 		24FE54252AE90FBC00604F38 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				24A975272AEBB97E008E05D3 /* CongratulationsView.swift */,
 				24FE54292AE910B600604F38 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -176,6 +186,9 @@
 			dependencies = (
 			);
 			name = "Argus Main";
+			packageProductDependencies = (
+				24A9752A2AEBC783008E05D3 /* ConfettiSwiftUI */,
+			);
 			productName = "Argus Main";
 			productReference = 24B974322AE7A750000A8510 /* Argus Main.app */;
 			productType = "com.apple.product-type.application";
@@ -204,6 +217,9 @@
 				Base,
 			);
 			mainGroup = 24B974292AE7A750000A8510;
+			packageReferences = (
+				24A975292AEBC783008E05D3 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+			);
 			productRefGroup = 24B974332AE7A750000A8510 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -446,6 +462,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		24A975292AEBC783008E05D3 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		24A9752A2AEBC783008E05D3 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24A975292AEBC783008E05D3 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 24B9742A2AE7A750000A8510 /* Project object */;
 }
