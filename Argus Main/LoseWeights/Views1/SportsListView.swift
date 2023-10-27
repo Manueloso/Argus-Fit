@@ -24,9 +24,19 @@ struct LoseWeightsView2: View {
                 ForEach(0..<viewModel.sports.count, id: \.self) { index in
                     if index % 2 == 0 {
                         HStack {
-                            RectangleView(sport: viewModel.sports[index])
+                            if index == 0 {
+                                NavigationLink(destination: RunningSection()){
+                                    
+                                    RectangleView(sport: viewModel.sports[index])
+                                }
+                                
+                            }else{
+                                RectangleView(sport: viewModel.sports[index])
+                            }
+
+                            
                             if index + 1 < viewModel.sports.count {
-                                RectangleView(sport: viewModel.sports[index + 1])
+                                RectangleView(sport: viewModel.sports[index+1])
                             }
                         }
                     }
