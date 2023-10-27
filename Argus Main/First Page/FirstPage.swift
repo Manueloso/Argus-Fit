@@ -10,17 +10,7 @@ import SwiftUI
 
 struct FirstPage: View {
     var body: some View {
-        
-        
-        VStack {
-            Text("Argus Fits")
-                .font(.largeTitle)
-                .foregroundColor(Color.white)
-                .bold()
-            Text("Fitness Stars from you!")
-                .font(.title3)
-                .foregroundColor(.white)
-            
+        NavigationStack {
             GeometryReader { geo in
                 ZStack{
                     Image ("FirstWallpaper")
