@@ -66,7 +66,8 @@ struct WorkoutSection: View {
                 ProgressBar(width: progressBarWidth(), totalWidth: 288)
                     .frame(height: 4)
                 
-                NavigationLink(destination: LoseWeightsView(viewModel: sportViewModel)){
+                NavigationLink(destination: CongratulationsView()) {
+
                     
                     ZStack{
                         Rectangle()
