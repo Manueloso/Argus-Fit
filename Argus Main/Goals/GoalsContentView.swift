@@ -28,7 +28,7 @@ struct GoalsContentView: View {
                 Button(action: {
                     // Action for the "Lose Weight" button
                 }) {
-                    Text("Lose Weight")
+                    Text("Gain Weight")
                         .font(.custom("SF Pro", size: 20))
                         .fontWeight(.bold)
                         .frame(width: 320, height: 90)

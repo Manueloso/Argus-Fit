@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct RunningSection: View {
     var body: some View {
         NavigationStack{
             VStack{
@@ -27,7 +27,7 @@ struct ContentView: View {
                             .font(.footnote)
                             .multilineTextAlignment(.leading)
                             .padding(.horizontal, 20)
-                        Text("10 calories burned")
+                        Text("200 calories burned")
                             .font(.footnote)
                             .multilineTextAlignment(.leading)
                             .padding(.horizontal, 20)
@@ -55,7 +55,7 @@ struct ContentView: View {
                             .font(.footnote)
                             .multilineTextAlignment(.leading)
                             .padding(.horizontal, 20)
-                        Text("20 calories burned")
+                        Text("350 calories burned")
                             .font(.footnote)
                             .multilineTextAlignment(.leading)
                             .padding(.horizontal, 20)
@@ -83,7 +83,7 @@ struct ContentView: View {
                             .font(.footnote)
                             .multilineTextAlignment(.leading)
                             .padding(.horizontal, 20)
-                        Text("30 calories burned")
+                        Text("550 calories burned")
                             .font(.footnote)
                             .multilineTextAlignment(.leading)
                             .padding(.horizontal, 20)
@@ -106,7 +106,7 @@ struct ContentView: View {
 }
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        RunningSection()
     }
 }
 
