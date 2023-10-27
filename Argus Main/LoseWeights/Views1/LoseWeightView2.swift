@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LoseWeightView2: View {
+    
     let sport: Sport
     var body: some View {
         

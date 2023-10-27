@@ -1,6 +1,9 @@
 import SwiftUI
 
 struct RunningSection: View {
+    
+    var sportViewModel: SportsViewModel
+    
     var body: some View {
         NavigationStack{
             VStack{
@@ -15,7 +18,7 @@ struct RunningSection: View {
                 //In General People Burn 11.4 for minutes when running
                 // Stage 1
                 Button(action: {}) {
-                    NavigationLink(destination: WorkoutSection()){
+                    NavigationLink(destination: WorkoutSection(sportViewModel: sportViewModel)){
                         VStack(alignment: .leading) {
                             Text("Stage 1")
                                 .multilineTextAlignment(.leading)
@@ -45,7 +48,7 @@ struct RunningSection: View {
             }
             // Stage 2 (Copy the stage button code here)
             Button(action: {}) {
-                NavigationLink(destination: WorkoutSection()){
+                NavigationLink(destination: WorkoutSection(sportViewModel: sportViewModel)){
                     VStack(alignment: .leading) {
                         Text("Stage 2")
                             .multilineTextAlignment(.leading)
@@ -74,7 +77,7 @@ struct RunningSection: View {
             }
             // Stage 3 (Copy the stage button code here)
             Button(action: {}) {
-                NavigationLink(destination: WorkoutSection()){
+                NavigationLink(destination: WorkoutSection(sportViewModel: sportViewModel)){
                     VStack(alignment: .leading) {
                         Text("Stage 3")
                             .multilineTextAlignment(.leading)
@@ -110,7 +113,7 @@ struct RunningSection: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        RunningSection()
+        RunningSection(sportViewModel: SportsViewModel())
     }
 }
 

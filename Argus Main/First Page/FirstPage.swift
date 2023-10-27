@@ -9,6 +9,9 @@ import SwiftUI
 
 
 struct FirstPage: View {
+    
+    var sportViewModel: SportsViewModel
+    
     var body: some View {
         NavigationStack {
             GeometryReader { geo in
@@ -77,5 +80,5 @@ struct FirstPage: View {
 
 
 #Preview {
-    FirstPage()
+    FirstPage(sportViewModel: SportsViewModel())
 }

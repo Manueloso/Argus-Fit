@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct LoseWeightsView2: View {
+struct LoseWeightsView: View {
     
-    var viewModel = SportsViewModel()
+    var viewModel: SportsViewModel
     
     var body: some View {
         
@@ -25,7 +25,7 @@ struct LoseWeightsView2: View {
                     if index % 2 == 0 {
                         HStack {
                             if index == 0 {
-                                NavigationLink(destination: RunningSection()){
+                                NavigationLink(destination: RunningSection(sportViewModel: viewModel)){
                                     
                                     RectangleView(sport: viewModel.sports[index])
                                 }
@@ -58,5 +58,5 @@ struct LoseWeightsView2: View {
 
 
 #Preview {
-    LoseWeightsView2()
+    LoseWeightsView(viewModel: SportsViewModel())
 }

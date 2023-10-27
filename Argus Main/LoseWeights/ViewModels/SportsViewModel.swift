@@ -7,6 +7,7 @@
 
 import Foundation
 
+@Observable
 class SportsViewModel {
     
     var sports = [
@@ -16,4 +17,7 @@ class SportsViewModel {
     Sport(name: "Powerlifting", imageName: "powerlifting")
     
     ]
+    
+    var selectedbutton : String = ""
+    
 }

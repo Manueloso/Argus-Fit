@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		092EB97C2AEA7C4E00E86E43 /* RunningSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092EB97B2AEA7C4E00E86E43 /* RunningSection.swift */; };
+		24A975282AEBB97E008E05D3 /* CongratulationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A975272AEBB97E008E05D3 /* CongratulationsView.swift */; };
 		24B974362AE7A750000A8510 /* Argus_MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B974352AE7A750000A8510 /* Argus_MainApp.swift */; };
 		24B974382AE7A750000A8510 /* FirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B974372AE7A750000A8510 /* FirstPage.swift */; };
 		24B9743A2AE7A751000A8510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24B974392AE7A751000A8510 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		092EB97B2AEA7C4E00E86E43 /* RunningSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningSection.swift; sourceTree = "<group>"; };
+		24A975272AEBB97E008E05D3 /* CongratulationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationsView.swift; sourceTree = "<group>"; };
 		24B974322AE7A750000A8510 /* Argus Main.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Argus Main.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B974352AE7A750000A8510 /* Argus_MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argus_MainApp.swift; sourceTree = "<group>"; };
 		24B974372AE7A750000A8510 /* FirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPage.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		24FE54252AE90FBC00604F38 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				24A975272AEBB97E008E05D3 /* CongratulationsView.swift */,
 				24FE54292AE910B600604F38 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -230,6 +233,7 @@
 				E763A2422AEA8343000DE1DB /* Sport.swift in Sources */,
 				24FE54212AE9072C00604F38 /* Goals.swift in Sources */,
 				24B974382AE7A750000A8510 /* FirstPage.swift in Sources */,
+				24A975282AEBB97E008E05D3 /* CongratulationsView.swift in Sources */,
 				24B974362AE7A750000A8510 /* Argus_MainApp.swift in Sources */,
 				E763A2442AEA8354000DE1DB /* SportsViewModel.swift in Sources */,
 				092EB97C2AEA7C4E00E86E43 /* RunningSection.swift in Sources */,

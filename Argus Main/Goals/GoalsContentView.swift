@@ -1,6 +1,12 @@
 import SwiftUI
 
 struct GoalsContentView: View {
+    
+    @State var selectedbutton : String = ""
+    
+    @AppStorage("isMyFirstLaunch")
+    var isMyFirstLaunch: Bool = true
+    
     var body: some View {
         NavigationStack{
             
@@ -11,10 +17,10 @@ struct GoalsContentView: View {
                     .foregroundColor(.black)
                 
                 Button(action: {
+                    selectedbutton = "Lose Weight"
+                    isMyFirstLaunch.toggle()
                     // Action for the "Lose Weight" button
-                    
                 }) {
-                    NavigationLink(destination: LoseWeightsView2()){
                         Text("Lose Weight")
                             .font(.custom("SF Pro", size: 20))
                             .fontWeight(.bold)
@@ -29,9 +35,11 @@ struct GoalsContentView: View {
                 }
                 
                 Button(action: {
+                    selectedbutton = "Gain Weight"
+                    isMyFirstLaunch.toggle()
                     // Action for the "Lose Weight" button
                 }) {
-                    NavigationLink(destination: LoseWeightsView2()){
+                  
                         Text("Gain Weight")
                             .font(.custom("SF Pro", size: 20))
                             .fontWeight(.bold)
@@ -43,11 +51,11 @@ struct GoalsContentView: View {
                             )
                             .foregroundColor(.white)
                     }
-                }
                 Button(action: {
+                    selectedbutton = "Keep in Shape"
+                    isMyFirstLaunch.toggle()
                     // Action for the "Keep in Shape" button
                 }) {
-                    NavigationLink(destination: LoseWeightsView2()){
                         Text("Keep in Shape")
                             .font(.custom("SF Pro", size: 20))
                             .fontWeight(.bold)
@@ -59,11 +67,12 @@ struct GoalsContentView: View {
                             )
                             .foregroundColor(.white)
                     }
-                }
+            
                 Button(action: {
+                    selectedbutton  = "Powerlifting"
+                    isMyFirstLaunch.toggle()
                     // Action for the "Powerlifting" button
                 }) {
-                    NavigationLink(destination: LoseWeightsView2()){
                         Text("Powerlifting")
                             .font(.custom("SF Pro", size: 20))
                             .fontWeight(.bold)
@@ -75,17 +84,16 @@ struct GoalsContentView: View {
                             )
                             .foregroundColor(.white)
                     }
-                }
             }
             .padding(.horizontal, 33)
             .padding(.vertical, 139)
             .background(Color.white)
         }
     }
-    
-    struct GoalsContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            GoalsContentView()
-        }
+
+
+struct GoalsContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        GoalsContentView()
     }
 }

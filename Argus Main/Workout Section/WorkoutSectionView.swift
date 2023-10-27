@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct WorkoutSection: View {
+    var sportViewModel: SportsViewModel
+    
     @State private var elapsedTime: TimeInterval = 0
     @State private var timerIsRunning = false
     @State private var timer: Timer?
@@ -8,11 +10,11 @@ struct WorkoutSection: View {
     var body: some View {
         
         NavigationStack {
-            NavigationLink ( destination:FirstPage() ){
-               
-            }.navigationTitle("Stage 2")
-                .navigationBarTitleDisplayMode(.inline)
-            
+//            NavigationLink ( destination: FirstPage(sportViewModel: <#SportsViewModel#>) ){
+//               
+//            }.navigationTitle("Stage 2")
+//                .navigationBarTitleDisplayMode(.inline)
+//            
             
             VStack(alignment: .center, spacing: 6) {
                 VStack(alignment: .leading, spacing: 10) {
@@ -64,7 +66,7 @@ struct WorkoutSection: View {
                 ProgressBar(width: progressBarWidth(), totalWidth: 288)
                     .frame(height: 4)
                 
-                NavigationLink(destination: FirstPage()){
+                NavigationLink(destination: LoseWeightsView(viewModel: sportViewModel)){
                     
                     ZStack{
                         Rectangle()
@@ -124,7 +126,7 @@ struct WorkoutSection: View {
 
 struct WorkoutSection_Previews: PreviewProvider {
     static var previews: some View {
-        WorkoutSection()
+        WorkoutSection(sportViewModel: SportsViewModel())
     }
 }
 
