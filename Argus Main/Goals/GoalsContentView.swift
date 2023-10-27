@@ -12,62 +12,69 @@ struct GoalsContentView: View {
                 
                 Button(action: {
                     // Action for the "Lose Weight" button
+                    
                 }) {
-                    Text("Lose Weight")
-                        .font(.custom("SF Pro", size: 20))
-                        .fontWeight(.bold)
-                        .frame(width: 320, height: 90)
-                        .background(
-                            RoundedRectangle(cornerRadius: 10)
-                                .foregroundColor(Color(red: 0.11, green: 0.52, blue: 0.95))
-                                .shadow(color: Color.black.opacity(0.25), radius: 2, x: 0, y: 4)
-                        )
-                        .foregroundColor(.white)
+                    NavigationLink(destination: LoseWeightsView2()){
+                        Text("Lose Weight")
+                            .font(.custom("SF Pro", size: 20))
+                            .fontWeight(.bold)
+                            .frame(width: 320, height: 90)
+                            .background(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .foregroundColor(Color(red: 0.11, green: 0.52, blue: 0.95))
+                                    .shadow(color: Color.black.opacity(0.25), radius: 2, x: 0, y: 4)
+                            )
+                            .foregroundColor(.white)
+                    }
                 }
                 
                 Button(action: {
                     // Action for the "Lose Weight" button
                 }) {
-                    Text("Gain Weight")
-                        .font(.custom("SF Pro", size: 20))
-                        .fontWeight(.bold)
-                        .frame(width: 320, height: 90)
-                        .background(
-                            RoundedRectangle(cornerRadius: 10)
-                                .foregroundColor(Color(red: 0.11, green: 0.52, blue: 0.95))
-                                .shadow(color: Color.black.opacity(0.25), radius: 2, x: 0, y: 4)
-                        )
-                        .foregroundColor(.white)
+                    NavigationLink(destination: LoseWeightsView2()){
+                        Text("Gain Weight")
+                            .font(.custom("SF Pro", size: 20))
+                            .fontWeight(.bold)
+                            .frame(width: 320, height: 90)
+                            .background(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .foregroundColor(Color(red: 0.11, green: 0.52, blue: 0.95))
+                                    .shadow(color: Color.black.opacity(0.25), radius: 2, x: 0, y: 4)
+                            )
+                            .foregroundColor(.white)
+                    }
                 }
-                
                 Button(action: {
                     // Action for the "Keep in Shape" button
                 }) {
-                    Text("Keep in Shape")
-                        .font(.custom("SF Pro", size: 20))
-                        .fontWeight(.bold)
-                        .frame(width: 320, height: 90)
-                        .background(
-                            RoundedRectangle(cornerRadius: 10)
-                                .foregroundColor(Color(red: 0.11, green: 0.52, blue: 0.95))
-                                .shadow(color: Color.black.opacity(0.25), radius: 2, x: 0, y: 4)
-                        )
-                        .foregroundColor(.white)
+                    NavigationLink(destination: LoseWeightsView2()){
+                        Text("Keep in Shape")
+                            .font(.custom("SF Pro", size: 20))
+                            .fontWeight(.bold)
+                            .frame(width: 320, height: 90)
+                            .background(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .foregroundColor(Color(red: 0.11, green: 0.52, blue: 0.95))
+                                    .shadow(color: Color.black.opacity(0.25), radius: 2, x: 0, y: 4)
+                            )
+                            .foregroundColor(.white)
+                    }
                 }
-                
                 Button(action: {
                     // Action for the "Powerlifting" button
                 }) {
-                    Text("Powerlifting")
-                        .font(.custom("SF Pro", size: 20))
-                        .fontWeight(.bold)
-                        .frame(width: 320, height: 90)
-                        .background(
-                            RoundedRectangle(cornerRadius: 10)
-                                .foregroundColor(Color(red: 0.11, green: 0.52, blue: 0.95))
-                                .shadow(color: Color.black.opacity(0.25), radius: 2, x: 0, y: 4)
-                        )
-                        .foregroundColor(.white)
+                    NavigationLink(destination: LoseWeightsView2()){
+                        Text("Powerlifting")
+                            .font(.custom("SF Pro", size: 20))
+                            .fontWeight(.bold)
+                            .frame(width: 320, height: 90)
+                            .background(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .foregroundColor(Color(red: 0.11, green: 0.52, blue: 0.95))
+                                    .shadow(color: Color.black.opacity(0.25), radius: 2, x: 0, y: 4)
+                            )
+                            .foregroundColor(.white)
+                    }
                 }
             }
             .padding(.horizontal, 33)
