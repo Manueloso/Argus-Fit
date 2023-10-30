@@ -51,7 +51,7 @@ struct LoseWeightsView: View {
             }.navigationTitle("Lose Weights")
                 .padding(.bottom, 230.0)
                 //.padding(.top,0.0)
-        }
+        }//.toolbar(.hidden)
     }
 }
 

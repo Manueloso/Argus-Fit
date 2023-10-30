@@ -23,7 +23,7 @@ struct FirstPage: View {
                         .frame (width: geo.size.width, height:geo.size.height, alignment: . center)
                         .opacity (1.8)
                     VStack{
-                        Text("Argus Fitness")
+                        Text("Argus Fit")
                             .font(.title)
                             .fontWeight(.bold)
                             .foregroundColor(Color.white)
