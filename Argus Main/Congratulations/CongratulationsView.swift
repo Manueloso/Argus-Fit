@@ -17,6 +17,8 @@ struct CongratulationsView: View {
             ZStack {
                 Color.white // Set the background color to white
                 ZStack {
+                    
+                    
                     RoundedRectangle(cornerRadius: 15)
                         .frame(width: 390, height: 861)
                         .foregroundColor(Color.white) // Set the background color to white
@@ -37,6 +39,7 @@ struct CongratulationsView: View {
                     }
                     
                     VStack {
+                        
                         Text("Congratulations!")
                             .font(Font.custom("SF Pro", size: 28).weight(.bold))
                             .onAppear {
@@ -73,6 +76,7 @@ struct CongratulationsView: View {
         let data: CardData
         
         var body: some View {
+            
             VStack(alignment: .leading, spacing: 12) {
                 Image(data.imageName)
                     .resizable()
